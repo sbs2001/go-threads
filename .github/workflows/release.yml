@@ -43,7 +43,7 @@ jobs:
           cp LICENSE threadsd/
           cp dist/README.md threadsd/
           cp dist/install threadsd/
-          declare -a arr=("darwin-amd64" "darwin/arm64" "windows-amd64.exe" "linux-amd64" "linux-386" "linux-arm")
+          declare -a arr=("darwin-amd64" "darwin-arm64" "windows-amd64.exe" "linux-amd64" "linux-386" "linux-arm")
           for i in "${arr[@]}"
           do
               OSARCH=${i%.*}
